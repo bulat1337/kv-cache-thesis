@@ -1,0 +1,23 @@
+{
+  "status": "verified",
+  "date": "2026-11-07",
+  "checks": [
+    "Execution code, lock, config and dataset match hashes fixed at run start",
+    "Archived calibration source and configuration match original recorded hashes",
+    "Calibration/test groups disjoint; no filtering by model outputs",
+    "All 240 raw answers independently rescored by original HotpotQA evaluator; budgets and repetitions verified",
+    "All aggregate numerators and full-correct denominators reconcile independently to raw rows",
+    "Numerical controls present and within pre-test calibrated tolerance for all 20 test prompts",
+    "Token identity holds in all compared cache modes; no-documents ablation is labeled separately",
+    "HotpotQA retains all 10 paragraphs and no token truncation; deterministic short-context selection disclosed"
+  ],
+  "limits": [
+    "6 independent HotpotQA test questions and 2 independent synthetic worlds",
+    "HotpotQA has zero examples correct with full context and wrong without documents; natural-data suitability unresolved",
+    "Qwen3-1.7B only, FP16 greedy, 48 output tokens",
+    "LegoLink and query-aware rule are explicit local adaptations",
+    "strict EM includes answer format changes; inspect F1 and raw answers",
+    "peak active memory includes shared harness pools; not an isolated server footprint",
+    "break-even is a measured-workload scenario, not a production guarantee"
+  ]
+}

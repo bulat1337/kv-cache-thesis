@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-07",
+  "timezone": "Europe/Moscow",
+  "python": "3.14.7",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "device": {
+    "device_name": "Apple M4 Pro",
+    "max_recommended_working_set_size": 19069665280,
+    "memory_size": 25769803776,
+    "architecture": "applegpu_g16s",
+    "max_buffer_length": 14302248960,
+    "resource_limit": 499000
+  },
+  "config": {
+    "model": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "dtype": "float16",
+    "thinking": false,
+    "generation": "greedy",
+    "max_new_tokens": 48,
+    "logit_absolute_tolerance": 0.25,
+    "logit_rms_tolerance": 0.05,
+    "prefix_tokens": "longest token prefix available from earlier requests; separate prefix_warm with all documents cached",
+    "legolink_k": [
+      4,
+      16
+    ],
+    "random_seeds": [
+      11,
+      29,
+      47
+    ],
+    "query_selector": "sum query attention over heads and layers on independently assembled cache; top 4 per document",
+    "quality_loss_tolerance": "pilot descriptive only; no confirmatory quality guarantee",
+    "timing_repetitions": 3,
+    "warmup": "one full pass and one sparse pass before measurements",
+    "scope": "pilot; independent implementation of published LegoLink principle, single sequence, no production scheduler"
+  },
+  "config_sha256": "966dd898c24ee8621748603ca449ee69c9291e5622d30ab2aedd7fa566dcdc02",
+  "examples_sha256": "91b847a5d6e4ef848be0b0aac8d3c39cdc575f704129910943767e11dff0a836",
+  "load_s": 0.9549257920007221,
+  "parameter_bytes": 3441149952,
+  "split": "test",
+  "files": {
+    "backend.py": "43145942e646f75c798b962d64b3d0bcb96167af2188d69b14109866e15e05e2",
+    "run.py": "7e897252e4215ca95bff146c411f4f10453d66ff820fa71f8488791c227ffe2e",
+    "metrics.py": "1976276753299217d86624a3832259307a9eeba42598c6909ce8317facb80162",
+    "requirements.lock.txt": "e94561acdd05483b8f4cdac496ea90aca2e9f18f54ee80e710fbcbb420a21290"
+  }
+}

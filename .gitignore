@@ -1,0 +1,14 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+*.log
+.env
+.env.*
+!.env.example
+**/weights/
+**/data/upstream/
+research/pilot/sources/*
+!research/pilot/sources/manifest.json
+research/pilot/results/*attempt*/
+research/pilot/results/previous*/

@@ -1,0 +1,18 @@
+{
+  "model": "Qwen/Qwen3-1.7B",
+  "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "dtype": "float16",
+  "thinking": false,
+  "generation": "greedy",
+  "max_new_tokens": 48,
+  "logit_absolute_tolerance": 0.25,
+  "logit_rms_tolerance": 0.05,
+  "prefix_tokens": "longest token prefix available from earlier requests; separate prefix_warm with all documents cached",
+  "legolink_k": [4, 16],
+  "random_seeds": [11, 29, 47],
+  "query_selector": "sum query attention over heads and layers on independently assembled cache; top 4 per document",
+  "quality_loss_tolerance": "pilot descriptive only; no confirmatory quality guarantee",
+  "timing_repetitions": 3,
+  "warmup": "one full pass and one sparse pass before measurements",
+  "scope": "pilot; independent implementation of published LegoLink principle, single sequence, no production scheduler"
+}

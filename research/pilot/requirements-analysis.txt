@@ -1,0 +1,5 @@
+numpy==2.5.4
+matplotlib==3.11.2
+pyarrow==26.0.1
+transformers==5.22.2
+ujson==6.1.0
